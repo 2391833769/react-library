@@ -16,6 +16,7 @@ const kinds: KindMap = {
   warning: '#FFA502',
 };
 
+
 const Alert: React.FC<AlertProps> = ({ children, kind = 'info', ...rest }) => (
   <div
     className={prefixCls}
@@ -25,7 +26,7 @@ const Alert: React.FC<AlertProps> = ({ children, kind = 'info', ...rest }) => (
     {...rest}
   >
     {children}
-    
+
   </div>
 );
 
